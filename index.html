@@ -1,0 +1,390 @@
+<!--eduprojects--vitrine-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EDU MINIS — Miniaturas colecionáveis</title>
+<meta name="description" content="EDU MINIS: miniaturas colecionáveis em escala, com procedência, fotos reais e envio para todo o Brasil.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- =====================================================================
+     DADOS RÁPIDOS PARA EDITAR
+     - Número de WhatsApp: procure por "5511999999999" neste arquivo e na
+       pasta /js/script.js e troque pelo seu número (DDI+DDD+número, só dígitos).
+     - Instagram / e-mail: ver seção <footer> mais abaixo.
+     - Produtos: cada <article class="card"> dentro de #catalogo é um item.
+       Para trocar a foto, troque o atributo src da tag <img>.
+       Para usar nova categoria no filtro, use o mesmo valor em
+       data-categoria do botão de filtro e do card.
+     ===================================================================== -->
+
+<!-- HEADER ============================================================ -->
+<header class="header">
+  <div class="container header__inner">
+    <a href="#topo" class="logo">
+      <span class="logo__plate">N.01</span>
+      EDU MINIS
+    </a>
+
+    <nav class="nav">
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#diferenciais">Diferenciais</a></li>
+        <li><a href="#como-comprar">Como comprar</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <a class="btn btn--primary" id="navWhats" href="https://wa.me/5541984783178?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20EDU%20MINIS%20e%20quero%20saber%20mais." target="_blank" rel="noopener">
+        Falar no WhatsApp
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO =============================================================== -->
+<section class="hero" id="topo">
+  <div class="blueprint-grid"></div>
+  <span class="crosshair crosshair--tl"></span>
+  <span class="crosshair crosshair--tr"></span>
+
+  <div class="container hero__layout">
+    <div>
+      <span class="eyebrow">Loja de miniaturas colecionáveis</span>
+      <h1 class="hero__title">EDU<br><span>MINIS</span></h1>
+      <p class="hero__lede">
+        Modelos em escala selecionados com cuidado, fotografados de verdade
+        e enviados com segurança para todo o Brasil. Cada peça do jeito que
+        chega na sua estante.
+      </p>
+      <div class="hero__actions">
+        <a href="#catalogo" class="btn btn--primary">Ver catálogo</a>
+        <a href="https://wa.me/5541984783178?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20EDU%20MINIS%20e%20quero%20saber%20mais." target="_blank" rel="noopener" class="btn btn--ghost">Falar no WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="titleblock">
+      <div class="titleblock__head">Ficha do acervo</div>
+      <div class="titleblock__row"><span class="titleblock__label">ESCALAS</span><span class="titleblock__value">1:18 · 1:24 · 1:43 · 1:64</span></div>
+      <div class="titleblock__row"><span class="titleblock__label">PEÇAS EM ESTOQUE</span><span class="titleblock__value">150+</span></div>
+      <div class="titleblock__row"><span class="titleblock__label">ENVIO</span><span class="titleblock__value">Todo o Brasil</span></div>
+      <div class="titleblock__row"><span class="titleblock__label">ATUALIZADO EM</span><span class="titleblock__value">JUN/2026</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CATÁLOGO ============================================================ -->
+<section class="section" id="catalogo">
+  <div class="container">
+    <div class="section__head">
+      <div>
+        <span class="eyebrow">Peças disponíveis</span>
+        <h2>Catálogo</h2>
+        <p>Exemplos de modelos que costumam passar pelo acervo. Troque pelas fotos e dados reais do seu estoque.</p>
+      </div>
+    </div>
+
+    <div class="filters" id="filters">
+      <button class="filter is-active" data-categoria="todos">Todos</button>
+      <button class="filter" data-categoria="jdm">JDM</button>
+      <button class="filter" data-categoria="competicao">Competição</button>
+      <button class="filter" data-categoria="edicao-limitada">Edição limitada</button>
+    </div>
+
+    <div class="catalog" id="catalogGrid">
+
+      <!-- CARD 1 -->
+      <article class="card" data-categoria="jdm edicao-limitada">
+        <div class="card__media">
+          <img src="produtos/datsun-kaidohouse.webp" alt="Datsun 510 verde, edição Kaido House, com adesivos de competição e número 0">
+          <span class="card__tag">Edição limitada</span>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Datsun 510 — Kaido House</h3>
+          <div class="card__spec">
+            <span><b>Escala</b> 1:64</span>
+            <span><b>Cond.</b> Novo / lacrado</span>
+            <span><b>Marca</b> Kaido House</span>
+            <span><b>Ref.</b> EM-001</span>
+          </div>
+          <div class="card__footer">
+            <span class="card__price">R$ 000,00</span>
+            <a class="btn btn--ghost btn--sm" href="#contato">Consultar</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 2 -->
+      <article class="card" data-categoria="competicao edicao-limitada">
+        <div class="card__media">
+          <img src="produtos/avante-kaidohouse.webp" alt="Carro azul com pintura de competição e patrocínio Avante, edição Kaido House">
+          <span class="card__tag">Edição limitada</span>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Avante Racing — Kaido House</h3>
+          <div class="card__spec">
+            <span><b>Escala</b> 1:64</span>
+            <span><b>Cond.</b> Novo / lacrado</span>
+            <span><b>Marca</b> Kaido House</span>
+            <span><b>Ref.</b> EM-002</span>
+          </div>
+          <div class="card__footer">
+            <span class="card__price">R$ 000,00</span>
+            <a class="btn btn--ghost btn--sm" href="#contato">Consultar</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 3 -->
+      <article class="card" data-categoria="jdm">
+        <div class="card__media">
+          <img src="produtos/gtr-r34-minigt.webp" alt="Nissan Skyline GT-R R34 preto, Mini GT">
+          <span class="card__tag">Em estoque</span>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Skyline GT-R R34 — Mini GT</h3>
+          <div class="card__spec">
+            <span><b>Escala</b> 1:64</span>
+            <span><b>Cond.</b> Novo / lacrado</span>
+            <span><b>Marca</b> Mini GT</span>
+            <span><b>Ref.</b> EM-003</span>
+          </div>
+          <div class="card__footer">
+            <span class="card__price">R$ 000,00</span>
+            <a class="btn btn--ghost btn--sm" href="#contato">Consultar</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 4 -->
+      <article class="card" data-categoria="jdm edicao-limitada">
+        <div class="card__media">
+          <img src="produtos/civic-kaidohouse.webp" alt="Honda Civic prata rebaixado com pintura de competição, edição Kaido House">
+          <span class="card__tag">Edição limitada</span>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Civic EG6 — Kaido House</h3>
+          <div class="card__spec">
+            <span><b>Escala</b> 1:64</span>
+            <span><b>Cond.</b> Novo / lacrado</span>
+            <span><b>Marca</b> Kaido House</span>
+            <span><b>Ref.</b> EM-004</span>
+          </div>
+          <div class="card__footer">
+            <span class="card__price">R$ 000,00</span>
+            <a class="btn btn--ghost btn--sm" href="#contato">Consultar</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 5 -->
+      <article class="card" data-categoria="competicao">
+        <div class="card__media">
+          <img src="produtos/porsche-minigt.webp" alt="Porsche preto de competição número 74, Mini GT">
+          <span class="card__tag">Em estoque</span>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Porsche GT3 #74 — Mini GT</h3>
+          <div class="card__spec">
+            <span><b>Escala</b> 1:64</span>
+            <span><b>Cond.</b> Novo / lacrado</span>
+            <span><b>Marca</b> Mini GT</span>
+            <span><b>Ref.</b> EM-005</span>
+          </div>
+          <div class="card__footer">
+            <span class="card__price">R$ 000,00</span>
+            <a class="btn btn--ghost btn--sm" href="#contato">Consultar</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 6 — placeholder sem foto, copie este bloco para novos itens -->
+      <article class="card" data-categoria="todos">
+        <div class="card__media">
+          <div class="card__placeholder-note">FOTO DO<br>PRÓXIMO MODELO</div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Novo modelo em breve</h3>
+          <div class="card__spec">
+            <span><b>Escala</b> —</span>
+            <span><b>Cond.</b> —</span>
+            <span><b>Marca</b> —</span>
+            <span><b>Ref.</b> EM-006</span>
+          </div>
+          <div class="card__footer">
+            <span class="card__price">A definir</span>
+            <a class="btn btn--ghost btn--sm" href="#contato">Consultar</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS ========================================================= -->
+<section class="section section--soft" id="diferenciais">
+  <div class="blueprint-grid"></div>
+  <div class="container">
+    <div class="section__head">
+      <div>
+        <span class="eyebrow">Por que comprar aqui</span>
+        <h2>Diferenciais</h2>
+      </div>
+    </div>
+
+    <div class="features">
+      <div class="feature">
+        <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg>
+        <h3>Procedência verificada</h3>
+        <p>Cada peça tem origem conferida antes de entrar no acervo.</p>
+      </div>
+      <div class="feature">
+        <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="7" width="18" height="13" rx="1.5"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+        <h3>Fotos reais antes do envio</h3>
+        <p>Você vê a peça de verdade, sem depender só da imagem de divulgação.</p>
+      </div>
+      <div class="feature">
+        <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="8" width="18" height="12" rx="1.5"/><path d="M3 8l4-5h10l4 5"/></svg>
+        <h3>Embalagem reforçada</h3>
+        <p>Cuidado extra para a peça chegar inteira, sem riscos no transporte.</p>
+      </div>
+      <div class="feature">
+        <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.38 8.38 0 0 1-1.9 5.4L21 21l-4.3-1.1a8.5 8.5 0 1 1 4.3-8.4z"/></svg>
+        <h3>Atendimento direto</h3>
+        <p>Fala com quem entende do assunto, sem robô nem central genérica.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO COMPRAR ========================================================= -->
+<section class="section" id="como-comprar">
+  <div class="container">
+    <div class="section__head">
+      <div>
+        <span class="eyebrow">Passo a passo</span>
+        <h2>Como comprar</h2>
+      </div>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <span class="step__num">01</span>
+        <h3>Escolha o modelo</h3>
+        <p>Veja o catálogo e separe as peças que tem interesse.</p>
+      </div>
+      <div class="step">
+        <span class="step__num">02</span>
+        <h3>Fale no WhatsApp</h3>
+        <p>Confirma disponibilidade, estado da peça e valor atualizado.</p>
+      </div>
+      <div class="step">
+        <span class="step__num">03</span>
+        <h3>Combine envio e pagamento</h3>
+        <p>Define forma de pagamento e como prefere receber.</p>
+      </div>
+      <div class="step">
+        <span class="step__num">04</span>
+        <h3>Receba em casa</h3>
+        <p>Acompanha o rastreio até a peça chegar até você.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE ================================================================ -->
+<section class="section section--soft" id="sobre">
+  <div class="blueprint-grid"></div>
+  <div class="container about">
+    <div>
+      <span class="eyebrow">A loja</span>
+      <h2 class="about__title">Sobre a EDU MINIS</h2>
+      <div class="about__text">
+        <p>
+          A EDU MINIS nasceu do gosto por miniaturas em escala e do cuidado
+          de tratar cada peça como parte de uma coleção, não só como um
+          produto. Aqui você troque este texto contando a história real
+          da loja: como começou, o que motiva e o que te diferencia de
+          outros vendedores.
+        </p>
+        <p>
+          Edite este parágrafo com detalhes sobre tempo de mercado, número
+          de peças já vendidas, parcerias e qualquer informação que ajude
+          o comprador a confiar antes de fechar negócio.
+        </p>
+      </div>
+    </div>
+
+    <div class="about__plate">
+      <dl>
+        <dt>Fundação</dt><dd>20XX</dd>
+        <dt>Foco</dt><dd>Miniaturas 1:64, 1:43, 1:24 e 1:18</dd>
+        <dt>Localização</dt><dd>Paraná, Brasil</dd>
+        <dt>Envio</dt><dd>Todo o território nacional</dd>
+        <dt>Atendimento</dt><dd>WhatsApp e Instagram</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL / CONTATO ================================================== -->
+<section class="section" id="contato">
+  <div class="container cta">
+    <span class="eyebrow">Fale com a gente</span>
+    <h2>Achou um modelo que combina com a sua coleção?</h2>
+    <p>Manda uma mensagem agora e confirma disponibilidade, valor e forma de envio.</p>
+    <div class="cta__actions">
+      <a href="https://wa.me/5541984783178?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20EDU%20MINIS%20e%20quero%20saber%20mais." target="_blank" rel="noopener" class="btn btn--primary">Falar no WhatsApp</a>
+      <a href="https://instagram.com/seu_perfil" target="_blank" rel="noopener" class="btn btn--ghost">Ver no Instagram</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER ================================================================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__col">
+        <h4>EDU MINIS</h4>
+        <p>Miniaturas colecionáveis em escala, com cuidado do começo ao fim.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Navegação</h4>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#como-comprar">Como comprar</a>
+        <a href="#sobre">Sobre</a>
+      </div>
+      <div class="footer__col">
+        <h4>Contato</h4>
+        <a href="https://wa.me/5541984783178" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://instagram.com/seu_perfil" target="_blank" rel="noopener">Instagram</a>
+        <a href="mailto:contato@seudominio.com.br">contato@seudominio.com.br</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 EDU MINIS. Todos os direitos reservados.</span>
+      <span>FOLHA 01/01 · REV. A</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Botão flutuante de WhatsApp -->
+<a class="whats-float" href="https://wa.me/5541984783178?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20EDU%20MINIS%20e%20quero%20saber%20mais." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm5.7 14.2c-.2.6-1.4 1.2-1.9 1.3-.5.1-1.1.2-3.1-.7-2.6-1.1-4.3-3.8-4.5-4-.1-.2-1-1.3-1-2.5s.6-1.8.9-2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5.2.5.7 1.7.8 1.8.1.2.1.3 0 .5-.4.7-.8 1-.6 1.3.9 1.6 1.7 2.1 3 2.7.2.1.4.1.5-.1.2-.2.7-.8.9-1.1.2-.3.4-.2.6-.1l1.7.9c.2.1.4.2.5.3.1.2.1.9-.1 1.5z"/></svg>
+</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>
